@@ -1,1 +1,89 @@
+<!-- Creacion de la estructura basica -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card_presentation</title>
+    <style>
+        * { /*Normalizacion*/
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }   
+        #card { 
+            width: 400px;
+            background-color: white;
+            padding: 30px; /*espacio interno*/
+            border-radius: 20px; /*redondeo de bordes*/
+            border: 2px solid black; /*grosor de borde, tipo de borde y color*/
+            box-shadow: 10px 10px 0px rgba(0, 0, 0, 0.911); /*sombra de la tarjeta*/               
+        } /*estilos de la tarjeta*/
+        img {
+            width: 100%;
+            border-radius: 8px;
+            margin-bottom: 25px;
+        }
+        button {
+            width: 25%;
+            height: 36px;
+            background-color: #f6d049;
+            color: black;
+            border: none;
+            border-radius: 8px;
+            font-weight: 800;
+            margin-bottom: 20px;            
+        }
+        h1 {
+            font-size: 24px;
+            font-weight: 800;
+            font-family: Arial;
+            margin-bottom: 25px;;
+        }
+        h2 {
+            font-size: 16px;
+            font-weight: 800;
+            font-family: Arial;
+            margin-bottom: 10px;
+         }
+        h3 {
+            font-size: 12px;
+            font-weight: 600;
+            font-family: Arial;
+            margin-bottom: 20px;;
+        }
+        p {
+            width: 100%;
+            text-align: justify;
+            font-size: 18px;
+            line-height: 1.5;
+            font-family: Arial;
+            margin-bottom: 30px;
+        }
+        #imagen2 {
+         width: 40px;
+         border-radius: 50%;
+         vertical-align: middle; /* Alinea la imagen verticalmente con el texto */
+        }
+        #autor {
+            display: flex;
+            align-items: center;
+        } /* Contenedor para la imagen y el nombre del autor */
 
+    </style>
+ </head>
+ <body>
+    <section id="card">
+        <img src="html_css.png" alt="simbolos de html">
+        <button>Learning</button>
+        <h3>Published 21 Sept 2025</h3>
+        <h1>HTML & CSS foundations</h1>
+        <p>These languages are the backbone of every website, defining structure, content, and presentation.</p>
+        <div id="autor">
+        <img src="1733286984965.jpg" alt="Imagen" id="imagen2">
+        <h2>Jose Espino</h2>
+        </div>
+
+    </section>
+ </body>
+ </html>
